@@ -76,7 +76,7 @@ while run:
 
         if event.type == pygame.KEYDOWN:
             if event.key == pygame.K_ESCAPE:
-                # Close when esc has been presse
+                # Quit when esc has been pressed
                 run = False
 
     grid = update_grid(grid)
