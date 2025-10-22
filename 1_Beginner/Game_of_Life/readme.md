@@ -11,8 +11,8 @@ The Game of Life is one of the simplest and most famous examples. It follows jus
 
 From these two simple rules, surprisingly complex and beautiful patterns emerge — gliders, blinkers, still lifes, and more.  
 This project includes **two versions**:  
-- A **terminal version** requiring no external modules.  
-- A **Pygame version** running in fullscreen.
+- A **terminal version** requiring no external modules.
+- A **Pygame version** running in fullscreen. `pip3 install pygame-ce` to install pygame.
 
 
 
