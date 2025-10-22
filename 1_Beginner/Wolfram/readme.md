@@ -3,7 +3,8 @@
 **Wolfram’s Cellular Automata** (also known as **Elementary Cellular Automata**) is a 1-dimensional cellular automaton.  
 Each cell can be in one of two possible states: **0** or **1**.
 
-The system starts with a single line of cells, typically with only one cell in the middle set to **1**, and all others set to **0**.  
+The system starts with a single line of cells, typically with only one cell in the middle set to **1**, and all others set to **0**.
+But I prefer randomizing the line for variation.
 Future states of cells depend on their **neighbors** — the cells to their immediate left and right.
 
 ---
@@ -45,8 +46,7 @@ Each new generation is drawn **below** the previous one, forming a visual patter
 
 Some rules produce highly structured patterns (like the **Sierpiński triangle**), while others appear chaotic or random.
 
-*Example output images:*  
-_(Rule 30, Rule 90, or Rule 110.)_
+![116](Images/116.png) ![23](Images/23.png)
 
 ---
 
@@ -68,7 +68,5 @@ This repository includes **two implementations**:
 
 ---
 
-## References
-
+## Learn More About Elementary Cellular Automata
 - [Stephen Wolfram – Elementary Cellular Automata](https://en.wikipedia.org/wiki/Elementary_cellular_automaton)
-- [Binary Numbers – Wikipedia](https://en.wikipedia.org/wiki/Binary_number)
