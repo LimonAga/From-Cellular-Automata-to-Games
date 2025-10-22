@@ -5,12 +5,12 @@ size = os.get_terminal_size()
 ROWS, COLS = size.lines, size.columns
 
 # Randomize the line. Normally you would start with a 1 in the middle but this has more variation.
-line = [random. randint(0, 1) for _ in range(COLS)]
+line = [random.randint(0, 1) for _ in range(COLS)]
 
 # Get a random number between 0 and 255 and turn it into a list of bits
 rule = [int(bit) for bit in format(random.randint(0, 255), '08b')]
 
-# Genarate all the patterns (order must be from 7 to 0) so we use reversed range
+# Genarate all the patterns (order must be from 7 to 0) so we reverse the range
 neighbor_patterns = [bin(i)[2:].zfill(3) for i in reversed(range(8))]
 
 #  Match patterns with the rule
