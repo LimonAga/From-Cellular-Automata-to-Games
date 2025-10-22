@@ -1,6 +1,6 @@
 import os, random, time
 
-# Get terminal size and awt it as ROWS an COLS
+# Get terminal size and use it as ROWS an COLS
 size = os.get_terminal_size()
 ROWS, COLS = size.lines, size.columns
 
