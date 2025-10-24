@@ -10,5 +10,4 @@ Each flower has a hue. In every iteration, flowers pick a random empty neighbor 
 
 This project includes two versions:
 - **Pillow version:** Just for creating images. To install Pillow, run `pip3 install pillow`.
-- **Pygame version:** Lets you watch flowers spread over the grid in real time. To install Pygame, run `pip3 install pygame-ce`.  
-  You can also save the images if you enable `save_images = True`.
+- **Pygame version:** Lets you watch flowers spread over the grid in real time. To install Pygame, run `pip3 install pygame-ce`.
