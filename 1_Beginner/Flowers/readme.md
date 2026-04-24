@@ -6,7 +6,7 @@ Each flower has a hue. In every iteration, flowers pick a random empty neighbor 
 
 ![Example1](images/example1.png)  ![Example2](images/example2.png)  
 
-⚠️ But be careful when creating high-quality images. This cellular automaton is exponentially expensive, which means it will take much longer for larger images with smaller cell sizes.
+⚠️ Be careful when creating high-quality images. This cellular automaton is exponentially expensive, which means it will take much longer for larger images with smaller cell sizes.
 
 This project includes two versions:
 - **Pillow version:** Just for creating images. To install Pillow, run `pip3 install pillow`.
