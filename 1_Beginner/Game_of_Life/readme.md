@@ -5,7 +5,7 @@
 A cellular automaton is a grid of cells that evolve over time according to simple rules.  
 Each cell can be in a finite number of states — most often “alive” or “dead” — and the state of each cell in the next generation depends on the states of its neighbors.
 
-The Game of Life is one of the simplest and most famous examples. It follows just two elegant rules:
+The Game of Life is one of the simplest and most famous examples. It follows just two rules:
 
 1. A live cell with **2 or 3 neighbors** survives to the next generation.  
 2. A dead cell with **exactly 3 neighbors** becomes alive.
