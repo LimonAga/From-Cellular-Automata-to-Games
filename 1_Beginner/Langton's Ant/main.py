@@ -14,7 +14,7 @@ ROWS, COLS = HEIGHT // CELL_SIZE, WIDTH // CELL_SIZE
 directions = ((0, 1), (1, 0), (0, -1), (-1, 0))
 direction_index = 0
 
-# Create an empty grid and set thr ant pos to middle
+# Create an empty grid and set the ant pos to middle
 grid = [[0 for _ in range(COLS)] for _ in range(ROWS)]
 ant_pos = [ROWS // 2, COLS // 2]
 
@@ -44,7 +44,7 @@ def update(grid, direction_index, ant_pos):
     color = 'white' if grid[ant_pos[0]][ant_pos[1]] else 'black'
     pygame.draw.rect(screen, color, [ant_pos[1] * CELL_SIZE, ant_pos[0] * CELL_SIZE, CELL_SIZE -1, CELL_SIZE -1])
     
-    # Move forward. Devide the coordinates by the grid size to loop around the edges
+    # Move forward. Divide the coordinates by the grid size to loop around the edges
     direction = directions[direction_index]
     ant_pos = (ant_pos[0] + direction[0]) % ROWS, (ant_pos[1] + direction[1]) % COLS
     
