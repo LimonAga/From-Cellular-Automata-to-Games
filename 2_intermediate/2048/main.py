@@ -13,6 +13,8 @@ CELL_SIZE = 100
 
 possible_moves = ['left', 'right', 'up', 'down']
 game_state = 'playing'
+vector_start = (0, 0)
+vector_end = (0, 0)
 
 font = pygame.font.Font(None, 60)
 
@@ -244,6 +246,31 @@ while run:
 
                         draw(board, 'down')
                         possible_moves = check_moves(board)
+
+        if event.type == pygame.MOUSEBUTTONDOWN:
+            vector_start = pygame.mouse.get_pos()
+        
+        if event.type == pygame.MOUSEBUTTONUP:
+            vector_end = pygame.mouse.get_pos()
+
+            mouse_vector = pygame.math.Vector2(vector_end[0] - vector_start[0], vector_end[1] - vector_start[1])
+
+            if mouse_vector.length() > 40:
+                if abs(mouse_vector.x) > abs(mouse_vector.y):
+                    vector_direction = 'right' if mouse_vector.x >  0 else 'left'
+                else:
+                    vector_direction = 'down' if mouse_vector.y >  0 else 'up'
+
+                if vector_direction in possible_moves:
+                    match vector_direction:
+                        case 'left': board = move_left(board)
+                        case 'right': board = move_right(board)
+                        case 'up': board = move_up(board)
+                        case 'down': board = move_down(board)
+        
+                    board = place_random_numbers(1, board)
+                    draw(board, vector_direction)
+                    possible_moves = check_moves(board)
 
     pygame.display.flip()
     clock.tick(FPS)
